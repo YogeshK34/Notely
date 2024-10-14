@@ -7,9 +7,9 @@ import { ThemeSwitch } from "./theme-switch";
 
 export default function Footer() {
   return (
-    <footer className="w-full mt-auto">
+    <footer className="w-full py-24">
       <Navbar isBordered>
-        <NavbarContent className="flex justify-center items-center gap-4">
+        <NavbarContent className="flex justify-center items-center">
           <NavbarItem className="flex justify-between gap-8">
             <Link href={siteConfig.links.twitter} aria-label="Twitter" target="_blank" rel="noopener noreferrer">
               <TwitterIcon className="text-default-500" />
