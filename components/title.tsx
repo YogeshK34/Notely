@@ -8,15 +8,15 @@ export default function App() {
     <div className="flex flex-col">
       <Textarea
         variant="underlined"
-        label="Title"
+        label={<span className="font-bold">Description</span>} // Making the label bold using a span
         labelPlacement="outside"
-        placeholder="Enter your title"
+        placeholder="Enter your description"
         value={value}
         onValueChange={setValue}
-        className="mb-0 bg-zinc-500" // Ensure no margin at the bottom
+        className="mb-0" // Ensure no margin at the bottom
       />
       {/* Display the value immediately below the Textarea without spacing */}
-      <p className="text-default-500 text-small mt-0">Title: {value}</p>
+      <p className="text-default-500 text-small mt-0">: {value}</p>
     </div>
   );
 }
