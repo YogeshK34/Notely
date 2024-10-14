@@ -14,15 +14,17 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-xl text-center justify-center">
           {/* <span className={title()}>Make&nbsp;</span> */}
-          <span className={title({ color: "yellow" })}>Notely &nbsp;</span>
-          <br /><br/>
+          <span className={title({ color: "yellow" })}>Notely&nbsp;</span>
+          <br />
+          <br />
           <div className={title({ class: "mt-4" })}>
             Capture Thoughts, Create Ideas, Conquer Tasks
           </div>
 
           <div className={subtitle({ class: "mt-4" })}>
-          "Never let a great idea slip away. With Notely, you can capture your thoughts, organize your tasks, and bring your ideas to life—all in one place.
-           Stay inspired, stay productive."
+            Never let a great idea slip away. With Notely, you can capture your
+            thoughts, organize your tasks, and bring your ideas to life—all in one
+            place. Stay inspired, stay productive.
           </div>
         </div>
 
