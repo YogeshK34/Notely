@@ -7,7 +7,7 @@ import { ThemeSwitch } from "./theme-switch";
 
 export default function Footer() {
   return (
-    <footer className="w-full py-24">
+    <footer className="w-full py-40">
       <Navbar isBordered>
         <NavbarContent className="flex justify-center items-center">
           <NavbarItem className="flex justify-between gap-8">

@@ -14,6 +14,8 @@ import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
+import Signin from "./signin";
+import Signup from "./signup";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -74,7 +76,10 @@ export const Navbar = () => {
           ))}
         </ul>
         <div className="absolute inset-y-0 right-0 w-50 pt-4">
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+        <NavbarItem className="hidden lg:flex gap-4">{searchInput}
+        <Signin/>
+        <Signup/>
+        </NavbarItem>
         </div>
       </NavbarContent>
 
