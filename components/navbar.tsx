@@ -73,9 +73,12 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </ul>
+        <div className="absolute inset-y-0 right-0 w-50 pt-4">
+        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
+        </div>
       </NavbarContent>
 
-      <NavbarContent
+      {/* <NavbarContent
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
@@ -92,19 +95,7 @@ export const Navbar = () => {
           <ThemeSwitch />
         </NavbarItem>
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
-            as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
-            startContent={<HeartFilledIcon className="text-danger" />}
-            variant="flat"
-          >
-            Sponsor
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
+      </NavbarContent> */}
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
